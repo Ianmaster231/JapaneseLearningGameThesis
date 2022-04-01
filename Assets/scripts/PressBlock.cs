@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PressBlock : MonoBehaviour
 {
+    public TypeOutScript TOS;
     public GameObject Instructions;
     public GameObject ThisTrigger;
     public AudioSource Information1;
@@ -14,6 +15,7 @@ public class PressBlock : MonoBehaviour
     void Start()
     {
         Instructions.SetActive(false);
+        ThisTrigger.SetActive(false);
     }
 
      void OnTriggerEnter(Collider collision)
@@ -29,6 +31,7 @@ public class PressBlock : MonoBehaviour
         if (collision.transform.tag == "Player")
         {
             Instructions.SetActive(false);
+            ThisTrigger.SetActive(false);
             Action = false;
         }
     }
@@ -39,11 +42,22 @@ public class PressBlock : MonoBehaviour
         {
             if(Action == true)
             {
+                ThisTrigger.SetActive(true);
+                Instructions.SetActive(true);
+                Information1.Play();
+                Action = false;
+                
+            }
+            else if (Action == false)
+            {
+                TOS.On = false;
                 ThisTrigger.SetActive(false);
                 Instructions.SetActive(false);
                 Information1.Play();
-                Action = false;
+                
             }
+            
         }
     }
 }
+
