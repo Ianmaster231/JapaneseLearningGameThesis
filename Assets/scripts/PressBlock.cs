@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PressBlock : MonoBehaviour
 {
-    public TypeOutScript TOS;
+    
     public GameObject Instructions;
     public GameObject ThisTrigger;
     public AudioSource Information1;
@@ -46,11 +46,12 @@ public class PressBlock : MonoBehaviour
                 Instructions.SetActive(true);
                 Information1.Play();
                 Action = false;
+
                 
             }
             else if (Action == false)
             {
-                TOS.On = false;
+               
                 ThisTrigger.SetActive(false);
                 Instructions.SetActive(false);
                 Information1.Play();
