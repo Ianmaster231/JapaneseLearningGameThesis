@@ -14,6 +14,7 @@ public class PressBlock : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+         
         Instructions.SetActive(false);
         ThisTrigger.SetActive(false);
     }
@@ -54,7 +55,7 @@ public class PressBlock : MonoBehaviour
                
                 ThisTrigger.SetActive(false);
                 Instructions.SetActive(false);
-                Information1.Play();
+               
                 
             }
             
