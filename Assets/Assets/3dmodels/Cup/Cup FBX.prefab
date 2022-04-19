@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6284024769546708333
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6664913582475853783}
+  m_Layer: 0
+  m_Name: Cup FBX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6664913582475853783
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6284024769546708333}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -252.67345, y: 66.97088, z: -376.12488}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5493150839829205360}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &4858631351876242128
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6664913582475853783}
+    m_Modifications:
+    - target: {fileID: 1105287282203581344, guid: 839e730a8c3e3c84cae92d4bb8907395, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105287282203581344, guid: 839e730a8c3e3c84cae92d4bb8907395, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0000016230324
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105287282203581344, guid: 839e730a8c3e3c84cae92d4bb8907395, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0014731379
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105287282203581344, guid: 839e730a8c3e3c84cae92d4bb8907395, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0003383085
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105287282203581344, guid: 839e730a8c3e3c84cae92d4bb8907395, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105287282203581344, guid: 839e730a8c3e3c84cae92d4bb8907395, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105287282203581344, guid: 839e730a8c3e3c84cae92d4bb8907395, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105287282203581344, guid: 839e730a8c3e3c84cae92d4bb8907395, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105287282203581344, guid: 839e730a8c3e3c84cae92d4bb8907395, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105287282203581344, guid: 839e730a8c3e3c84cae92d4bb8907395, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105287282203581344, guid: 839e730a8c3e3c84cae92d4bb8907395, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2295347568339498440, guid: 839e730a8c3e3c84cae92d4bb8907395, type: 3}
+      propertyPath: m_Name
+      value: Coca_Cola_Cup
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 839e730a8c3e3c84cae92d4bb8907395, type: 3}
+--- !u!4 &5493150839829205360 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1105287282203581344, guid: 839e730a8c3e3c84cae92d4bb8907395, type: 3}
+  m_PrefabInstance: {fileID: 4858631351876242128}
+  m_PrefabAsset: {fileID: 0}
