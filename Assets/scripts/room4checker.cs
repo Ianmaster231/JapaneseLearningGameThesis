@@ -21,7 +21,7 @@ public class room4checker : MonoBehaviour
         roomchecker2.SetActive(false);
         roomchecker3.SetActive(false);
         roomchecker4.SetActive(false);
-        roomchecker5.SetActive(true);
+        roomchecker5.SetActive(false);
         roomchecker6.SetActive(false);
         roomchecker7.SetActive(false);
     }

@@ -17,7 +17,7 @@ public class Roomchecker : MonoBehaviour
     void Start()
     {
 
-        roomchecker1.SetActive(true);
+        roomchecker1.SetActive(false);
         roomchecker2.SetActive(false);
         roomchecker3.SetActive(false);
         roomchecker4.SetActive(false);
@@ -38,7 +38,7 @@ public class Roomchecker : MonoBehaviour
     {
         if (collision.transform.tag == "Player")
         {
-            roomchecker2.SetActive(false);
+            roomchecker1.SetActive(false);
             Action = false;
         }
     }

@@ -22,7 +22,7 @@ public class room5cheker : MonoBehaviour
         roomchecker3.SetActive(false);
         roomchecker4.SetActive(false);
         roomchecker5.SetActive(false);
-        roomchecker6.SetActive(true);
+        roomchecker6.SetActive(false);
         roomchecker7.SetActive(false);
     }
 
