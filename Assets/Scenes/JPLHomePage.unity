@@ -1090,6 +1090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4c5ae428388f8241aafc103c6113e7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
 --- !u!4 &1186202206
 Transform:
   m_ObjectHideFlags: 0
@@ -1133,7 +1134,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14792c34482827f4e83561f050b7f9dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeTaken: 0
   playerNameInput: {fileID: 1183070361}
+  scoreText: {fileID: 0}
+  scoreAmount: 0
+  pointIncreasedPerSecond: 0
   player1Name: {fileID: 0}
   player2Name: {fileID: 0}
   player1Score: {fileID: 0}

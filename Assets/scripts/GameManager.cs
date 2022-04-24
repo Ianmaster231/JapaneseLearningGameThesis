@@ -9,8 +9,11 @@ using System;
 
 public class GameManager : MonoBehaviour
 {
+    public float timeTaken = 0f;
     [SerializeField] private TMPro.TMP_InputField playerNameInput;
-   
+    public Text scoreText;
+    public float scoreAmount;
+    public float pointIncreasedPerSecond;
     [SerializeField] private TMPro.TMP_Text player1Name;
     [SerializeField] private TMPro.TMP_Text player2Name;
     [SerializeField] private TMPro.TMP_Text player1Score;
@@ -68,15 +71,22 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
-    
+    void start()
+    {
+       // scoreAmount = timeTaken;
+    }
     void Update()
     {
+       // scoreAmount = 0f;
+        pointIncreasedPerSecond = 1f;
+       // scoreText.text = (int)scoreAmount + " Score";
+        scoreAmount += pointIncreasedPerSecond * Time.deltaTime;
         //Winner();
         //player1Score.text = score1.ToString();
-       // player2Score.text = score2.ToString();
-       // if (SceneManager.GetActiveScene().name == "MainGame")
-       // player1Name.text = "Player 1: " + FirebaseController._player1;
-       // player2Name.text = "Player 2: " + FirebaseController._player2;
+        // player2Score.text = score2.ToString();
+        // if (SceneManager.GetActiveScene().name == "MainGame")
+        // player1Name.text = "Player 1: " + FirebaseController._player1;
+        // player2Name.text = "Player 2: " + FirebaseController._player2;
     }
     public static void NextScene(string SceneName)
     {
