@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class lastroomchecker : MonoBehaviour
 {
-
+    public GameObject level_changer;
     public GameObject roomchecker1;
     public GameObject roomchecker2;
     public GameObject roomchecker3;
@@ -16,7 +16,7 @@ public class lastroomchecker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        level_changer.SetActive(false);
         roomchecker1.SetActive(false);
         roomchecker2.SetActive(false);
         roomchecker3.SetActive(false);
@@ -30,7 +30,10 @@ public class lastroomchecker : MonoBehaviour
     {
         if (collision.transform.tag == "Player")
         {
+           
             roomchecker7.SetActive(true);
+            level_changer.SetActive(true);
+
             Action = true;
         }
     }
@@ -38,8 +41,10 @@ public class lastroomchecker : MonoBehaviour
     {
         if (collision.transform.tag == "Player")
         {
+           
             roomchecker6.SetActive(false);
             Action = false;
         }
     }
+
 }
