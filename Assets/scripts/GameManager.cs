@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
 
     public int score1;
     public int score2;
-
+    public GameObject endgame;
     public Text Result;
     public Image AIChoice;
 
@@ -38,7 +38,10 @@ public class GameManager : MonoBehaviour
     }
 
 
-
+    private void Start()
+    {
+        endgame.SetActive(false);
+    }
 
 
 
@@ -98,7 +101,12 @@ public class GameManager : MonoBehaviour
     {
         
         StartCoroutine(FirebaseController.CreateTime());
+        endgame.SetActive(true);
+    }
 
+    public void Quit()
+    {
+        Application.Quit();
     }
 
     public void JoinGame()

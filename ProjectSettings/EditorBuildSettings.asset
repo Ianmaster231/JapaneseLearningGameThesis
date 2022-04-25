@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/JapaneseLearningGameLevel.unity
     guid: abc1a6b3c478b874aa1acb685f652d89
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ENDgame.unity
     guid: 3f1ef07055e4a654c9a93a9ab3f304b5
   - enabled: 1
