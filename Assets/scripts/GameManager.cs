@@ -55,14 +55,14 @@ public class GameManager : MonoBehaviour
 
                 break;
             case "End":
-                player1Name.text = "Player 1: " + FirebaseController.circle;
+               // player1Name.text = "Player 1: " + FirebaseController.circle;
                 player1Name.text = "Player 1: " + FirebaseController._player1;
-                player2Name.text = "Player 2: " + FirebaseController.circle;
+               // player2Name.text = "Player 2: " + FirebaseController.circle;
                 break;
             case "MainGame":
                 player1Name.text = "Player 1: " + FirebaseController._player1;
 
-                player1Score.text = "Score: " + FirebaseController._player1Score;
+               // player1Score.text = "Score: " + FirebaseController._player1Score;
 
                 break;
             default:
@@ -76,13 +76,14 @@ public class GameManager : MonoBehaviour
         //player1Score.text = score1.ToString();
         // player2Score.text = score2.ToString();
         // if (SceneManager.GetActiveScene().name == "MainGame")
-         player1Name.text = "Player 1: " + FirebaseController._player1;
-         player2Name.text = "Player 2: " + FirebaseController.circle;
+        // player1Name.text = "Player 1: " + FirebaseController._player1;
+        // player2Name.text = "Player 2: " + FirebaseController.circle;
     }
     public static void NextScene(string SceneName)
     {
         SceneManager.LoadScene(SceneName);
     }
+    
 
     //Welcome Scene
     public void CreateGame()
@@ -95,17 +96,16 @@ public class GameManager : MonoBehaviour
     }
     public void CreateTime()
     {
-        if (playerNameInput.text != "")
-        {
-            StartCoroutine(FirebaseController.CreateGame(playerNameInput.text));
+        
+        StartCoroutine(FirebaseController.CreateTime());
 
-        }
     }
+
     public void JoinGame()
     {
         if (playerNameInput.text != "")
         {
-            FirebaseController.circle = playerNameInput.text;
+           // FirebaseController.circle = playerNameInput.text;
             Application.Quit();
             
         }
