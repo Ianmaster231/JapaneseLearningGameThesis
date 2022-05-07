@@ -74,11 +74,11 @@ public class FirebaseController : MonoBehaviour
         _player1 = player1;
         LobbyInstance lobby = new LobbyInstance(player1, 0);
 
-        _key = _dbRef.Child("Games").Push().Key;
+        _key = _dbRef.Child("GBL&eLearning").Push().Key;
 
-        yield return _dbRef.Child("Games").Child(_key).SetRawJsonValueAsync(JsonUtility.ToJson(lobby));
+        yield return _dbRef.Child("GBL&eLearning").Child(_key).SetRawJsonValueAsync(JsonUtility.ToJson(lobby));
         //Listen to any changes in this lobby
-        _dbRef.Child("Games").Child(_key).ValueChanged += HandleValueChanged;
+        _dbRef.Child("GBL&eLearning").Child(_key).ValueChanged += HandleValueChanged;
         GameManager.NextScene("JapaneseLearningGameLevel");
     }
 
@@ -95,7 +95,7 @@ public class FirebaseController : MonoBehaviour
         //  _dbRef.Child("Games").Child(_key).ValueChanged += HandleValueChanged;
         //GameManager.NextScene("JapaneseLearningGameLevel");
 
-        yield return _dbRef.Child("Games").Child(_key).Child("playertime").SetValueAsync(finaltime);
+        yield return _dbRef.Child("GBL&eLearning").Child(_key).Child("playertime").SetValueAsync(finaltime);
     }
     
 
